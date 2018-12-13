@@ -1,0 +1,22 @@
+---
+title: ""
+---
+
+<div class="row">
+<div class="col-xs-12 col-sm-5 text-center">
+<img src="anwaar.jpg" alt="anwaar" style="width:400px;" align = "top"/> 
+</div>
+<div class="col-xs-12 col-sm-7">
+
+
+<span style="font-family:myFancyFont;font-style: italic; color:gray; font-size:2em;">A data science engineering student</span>
+
+My name is Anwaar Msehli. I'm Currently a statistics and data analysis student at ESSAIT.
+i'm looking for a PFE in data science anywhere in the world.
+If you have any comments, questions or suggestions feel free to [contact me](mailto:anwaarmsehli@hotmail.fr) 
+
+</div>
+</div>
+
+
+

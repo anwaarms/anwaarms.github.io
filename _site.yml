@@ -1,0 +1,34 @@
+name: "Anwaar Msehli"
+output_dir: "."
+navbar:
+  title: "Anwaar Msehli"
+  right:
+  - text: "home"
+    href: index.html
+  - text: Projects
+    menu: 
+      - text: R package:printFactors
+        href: https://github.com/anwaarms/printFactors
+      - text: R package:clustA 
+        href: https://github.com/anwaarms/package-clustA
+      - text: Bayesien Statistics
+        href: https://www.kaggle.com/anwaarmsehli/bayesian-model-the-beetles-example
+      - text: Innovation measures
+        href: Innovationmeasures.pdf
+      - text: Map of Tunisia
+        href: https://github.com/anwaarms/Map-of-Tunisia
+        
+
+  - text: My CV
+    href: myresume.html
+  - icon: fa-github fa-lg
+    href: http://github.com/anwaarms
+  - icon: fa-linkedin fa-lg
+    href: https://www.linkedin.com/in/anwaar-msehli-57b71b163/
+  - icon: fa-facebook fa-lg
+    href: https://www.facebook.com/anwaar.msehli
+
+output:
+  html_document:
+    theme: readable
+    highlight: textmate

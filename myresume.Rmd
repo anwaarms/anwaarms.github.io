@@ -1,0 +1,86 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<p align="center">
+*Curriculum Vitae*
+</p>
+
+
+<p align="center">
+<font size="+2">**Anwaar Msehli**</font>
+</p>
+
+
+<p align="justify">
+
+**Status:** Student at the Higher School of Statistics and Information Analysis
+
+
+**About Me**Extremely motivated to constantly develop my skills and grow professionally. I also have the ability to come up with interesting ideas and I am always enthusiastic to learn and undertake new challenges. 
+  I am confident in my ability to communicate effectively both verbally and in writing.
+
+#skills:
+*Java, SPSS,excel,SAS,R.
+
+innovative,creative,with a thirst for knowledge
+
+</p>
+#Profile
+<p align="justify">
+A Data Scientist seeking an internship in the  Data Science field, where I can apply my knowledge and skills.
+</p>
+
+
+#Education
+<p align="justify">
+* {since 2016}{ Higher School of statistics and data analysis}{Ariana, Tunisia}{***ESSAIT***}
+
+* {2014-2016}{Preparatory School for Engineer Studies}{Nabeul,Tunisia}{***IPEIN***}
+
+* {2010-2014}{The pioneer high school}{El Kef, Tunisia}{***Lycee pilote du kef***}
+</p>
+
+
+#Projects
+<p align="justify">
+*{2018}{Java :A guessing game with Java SWING and SQL connection.}
+*{2018}{Bayesian Statistics : Using R and OpenBUGS}
+*{2018}{A simple R package that generates the factors of a given number.}
+*{2018}{Correcting seasonal variations of a time series and doing a one year prediction with JDemetra}
+*{2017}{Machine learning: Digit Recognition with Python and TensorFlow}
+
+*{2017}{Monte Carlo simulation.}
+
+*{2017}{Survey: Number of hours spent on physical activities.}
+*{2016}{PCA: Principal component analysis.}
+</p>
+
+#Experience
+<p align="justify">
+
+
+
+*2018:{Internship at Business and Decision}  {6 weeks} {Innovation methods: Data collection, similarities between Tunisia's innovation strategy and other countries.}
+*2017:{Internship (BIAT) Agency }{4 weeks}{The first work experience. Got to understand how to deal with different situations in the working environment}
+  
+#Languages
+  
+*Arabic: Native language
+*English
+*French
+*German
+  
+#Interests and Hobbies
+  +Exercising ,Running. Cinema . Mindfulness. Crosswords
+  
