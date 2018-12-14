@@ -16,7 +16,7 @@ navbar:
       - text: Innovation measures
         href: Innovationmeasures.pdf
       - text: Map of Tunisia
-        href: https://github.com/anwaarms/Map-of-Tunisia
+        href: https://anwaarms.shinyapps.io/dashing/
         
 
   - text: My CV

@@ -1,0 +1,80 @@
+---
+title: "Map of Tunisia by Governorate"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    social: menu
+    runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(rbokeh)
+library(flexdashboard)
+library(shiny)
+library(readxl)
+library(readxl)
+library(readr)
+library(leaflet)
+library(sp)
+library(raster)
+codes_maps_tunisia <- read_delim("codes_maps_tunisia.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+menages_selon_source_d_eau <- read_excel("menages selon source d'eau.xlsx", 
+                                         col_types = c("text", "numeric", "numeric"))
+data=menages_selon_source_d_eau
+hasc=codes_maps_tunisia
+i=match(data$Regions,hasc$Gouvernorat)
+data$code=hasc$HASC_1[i]
+
+
+tnMAP=getData(name = "GADM", country="TUN" , level = 1)
+
+i=match(tnMAP$HASC_1,data$code)
+tnMAP=cbind.Spatial(tnMAP,data[i,])
+tnMAP@data=tnMAP@data[,-14]
+
+```
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### About This Dataset 
+```{r}
+selectInput('bin',label = "",colnames(tnMAP@data[,12:13]))
+
+```
+This dataset was published by the National Institute of Statistics of Tunisia.
+It consist of two variables explained by Governorate: The number of menage and the number of menage in each Governorate away from SONEDE by one kilometer or more.
+
+```{r}
+library(RColorBrewer)
+library(DT)
+data=data[,-4]
+datatable(data )
+  
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### MAP of tunisia
+
+```{r}
+
+
+renderLeaflet({
+col=colorRampPalette(c( "lightpink","sienna4"))                                                            
+e=col(24) 
+tnMAP$variableplot <- as.numeric(tnMAP@data[, input$bin])
+my_popup <- paste0("<strong>",tnMAP@data$Regions,"</strong>"," (",input$bin,")")
+pal=colorNumeric(e,domain = tnMAP$variableplot)
+leaflet(tnMAP)%>%addProviderTiles(providers$CartoDB.Positron )%>% addPolygons(stroke = FALSE , smoothFactor = 0.2 ,fillColor = pal(tnMAP$variableplot), fillOpacity = 0.8 ,    popup = paste("<strong>",tnMAP@data$Regions,"</strong>","</br>","<strong>",input$bin,"</strong>",": ",tnMAP$variableplot,""
+))%>% 
+                                                                                                       
+
+addLegend(pal = pal , values = ~tnMAP$variableplot , opacity = 1.5 , position = "bottomright" )
+
+
+})
+```
+
+

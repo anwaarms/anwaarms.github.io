@@ -1,0 +1,12 @@
+name: dashing
+title:
+username:
+account: anwaarms
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 616234
+bundleId: 1760952
+url: https://anwaarms.shinyapps.io/dashing/
+when: 1544712010.23151
+asMultiple: FALSE
+asStatic: FALSE
